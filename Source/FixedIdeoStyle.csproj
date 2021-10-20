@@ -45,8 +45,15 @@
     <None Include="..\Common\Defs\**" />
     <None Include="..\Common\Languages\**" />
     <None Include="..\Common\Patches\**" />
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>..\..\..\RimWorldWin64_Data\Managed\UnityEngine.IMGUIModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Blueprint_Build_GetGizmos_Patch.cs" />
+    <Compile Include="Command_SetStyle.cs" />
+    <Compile Include="Frame_GetGizmos_Patch.cs" />
     <Compile Include="GenConstruct_CanConstruct_Patch.cs" />
     <Compile Include="FixedIdeoStyle.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

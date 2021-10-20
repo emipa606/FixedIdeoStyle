@@ -20,7 +20,7 @@ namespace FixedIdeoStyle
             }
 
             var frame = t as Frame;
-            if (frame == null)
+            if (frame == null || frame.Faction != Faction.OfPlayer)
             {
                 return;
             }
