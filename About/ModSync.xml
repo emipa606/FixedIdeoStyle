@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModSyncNinjaData>
+  <ID>7ea876a1-f8dd-4729-9cfe-d345dd0f2ba0</ID>
+  <ModName>Fixed Ideo Style (Continued)</ModName>
+  <Version>1.4.1</Version>
+  <SaveBreaking>False</SaveBreaking>
+  <Host name="Github">
+    <Owner>emipa606</Owner>
+    <Project>FixedIdeoStyle</Project>
+    <AboutDir>About</AboutDir>
+    <DownloadFrom>ModSyncMainPage</DownloadFrom>
+    <Branch>master</Branch>
+  </Host>
+</ModSyncNinjaData>
+
+
+
+
+
