@@ -26,3 +26,6 @@ Also allows you to change the style of a blueprint or frame.
 -  Use https://github.com/RimSort/RimSort/releases/latest]RimSort to sort your mods
 
 
+
+https://steamcommunity.com/sharedfiles/filedetails/changelog/3092162458]![Image](https://img.shields.io/github/v/release/emipa606/FixedIdeoStyle?label=latest%20version&style=plastic&color=9f1111&labelColor=black)
+

@@ -7,10 +7,10 @@ using Verse.AI;
 namespace FixedIdeoStyle;
 
 [HarmonyPatch(typeof(GenConstruct), nameof(GenConstruct.CanConstruct), typeof(Thing), typeof(Pawn), typeof(bool),
-    typeof(bool))]
+    typeof(bool), typeof(JobDef))]
 internal static class GenConstruct_CanConstruct_Patch
 {
-    private static readonly List<string> tmpIdeoMemberNames = new List<string>();
+    private static readonly List<string> tmpIdeoMemberNames = [];
 
     public static void Postfix(ref bool __result, Thing t, Pawn p)
     {
