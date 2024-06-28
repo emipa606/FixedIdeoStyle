@@ -6,7 +6,7 @@ using Verse;
 namespace FixedIdeoStyle;
 
 [HarmonyPatch(typeof(Blueprint_Build), nameof(Blueprint_Build.GetGizmos))]
-internal static class Blueprint_Build_GetGizmos_Patch
+internal static class Blueprint_Build_GetGizmos
 {
     public static IEnumerable<Gizmo> Postfix(IEnumerable<Gizmo> __result, Blueprint_Build __instance)
     {

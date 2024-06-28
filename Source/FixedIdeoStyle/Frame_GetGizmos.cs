@@ -6,7 +6,7 @@ using Verse;
 namespace FixedIdeoStyle;
 
 [HarmonyPatch(typeof(Frame), nameof(Frame.GetGizmos))]
-internal static class Frame_GetGizmos_Patch
+internal static class Frame_GetGizmos
 {
     public static IEnumerable<Gizmo> Postfix(IEnumerable<Gizmo> __result, Frame __instance)
     {

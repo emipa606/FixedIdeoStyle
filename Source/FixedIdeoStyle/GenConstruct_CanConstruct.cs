@@ -8,9 +8,10 @@ namespace FixedIdeoStyle;
 
 [HarmonyPatch(typeof(GenConstruct), nameof(GenConstruct.CanConstruct), typeof(Thing), typeof(Pawn), typeof(bool),
     typeof(bool), typeof(JobDef))]
-internal static class GenConstruct_CanConstruct_Patch
+internal static class GenConstruct_CanConstruct
 {
     private static readonly List<string> tmpIdeoMemberNames = [];
+    public static bool MonumentSpawning;
 
     public static void Postfix(ref bool __result, Thing t, Pawn p)
     {
@@ -33,6 +34,11 @@ internal static class GenConstruct_CanConstruct_Patch
         var builderStyle = p.Ideo?.GetStyleFor(thingDef);
 
         if (frameStyle == builderStyle)
+        {
+            return;
+        }
+
+        if (QuestUtility.GetSelectMonumentMarkerGizmo(t) != null)
         {
             return;
         }

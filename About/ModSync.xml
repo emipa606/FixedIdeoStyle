@@ -2,7 +2,7 @@
 <ModSyncNinjaData>
   <ID>7ea876a1-f8dd-4729-9cfe-d345dd0f2ba0</ID>
   <ModName>Fixed Ideo Style (Continued)</ModName>
-  <Version>1.5.0</Version>
+  <Version>1.5.1</Version>
   <SaveBreaking>False</SaveBreaking>
   <Host name="Github">
     <Owner>emipa606</Owner>
@@ -12,3 +12,4 @@
     <Branch>master</Branch>
   </Host>
 </ModSyncNinjaData>
+
