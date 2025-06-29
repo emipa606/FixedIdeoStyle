@@ -56,16 +56,16 @@ public class Command_SetStyle : Command
 
         var options = new List<FloatMenuOption>
         {
-            new FloatMenuOption("None".Translate(), delegate { SetThingStyle(null); }, thingDef)
+            new("None".Translate(), delegate { setThingStyle(null); }, thingDef)
         };
 
         options.AddRange(styles.Select(s =>
-            new FloatMenuOption(s.Category.LabelCap, delegate { SetThingStyle(s); }, s.UIIcon, thingDef.uiIconColor)));
+            new FloatMenuOption(s.Category.LabelCap, delegate { setThingStyle(s); }, s.UIIcon, thingDef.uiIconColor)));
 
         Find.WindowStack.Add(new FloatMenu(options));
     }
 
-    public void SetThingStyle(ThingStyleDef style)
+    private void setThingStyle(ThingStyleDef style)
     {
         thing.StyleDef = style;
 
