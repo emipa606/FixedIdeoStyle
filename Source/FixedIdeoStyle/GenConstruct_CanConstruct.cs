@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using HarmonyLib;
 using RimWorld;
 using Verse;
@@ -46,12 +47,10 @@ internal static class GenConstruct_CanConstruct
         __result = false;
 
         tmpIdeoMemberNames.Clear();
-        foreach (var ideo in Find.IdeoManager.IdeosListForReading)
+        foreach (var ideo in
+                 Find.IdeoManager.IdeosListForReading.Where(ideo => ideo.GetStyleFor(thingDef) == frameStyle))
         {
-            if (ideo.GetStyleFor(thingDef) == frameStyle)
-            {
-                tmpIdeoMemberNames.Add(ideo.memberName);
-            }
+            tmpIdeoMemberNames.Add(ideo.memberName);
         }
 
         if (tmpIdeoMemberNames.Any())
